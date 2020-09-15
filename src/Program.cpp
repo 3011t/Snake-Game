@@ -1,0 +1,12 @@
+#include "Core.h"
+#include "SnakeGame.h"
+
+int main() {
+    SnakeGame game = SnakeGame();
+
+    game.Run();
+
+    getchar();
+
+    return 0;
+}

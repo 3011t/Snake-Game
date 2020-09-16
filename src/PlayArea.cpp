@@ -1,6 +1,12 @@
 #include "PlayArea.h"
 
 PlayArea::PlayArea() {
+    for (int i = 0; i < 32; i++) {
+        for (int j = 0; j < 32; j++) {
+            m_area[i][j] = PointState::Empty;
+        }
+        
+    }
     
 }
 

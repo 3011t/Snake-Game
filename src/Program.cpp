@@ -6,7 +6,5 @@ int main() {
 
     game.Run();
 
-    getchar();
-
     return 0;
 }

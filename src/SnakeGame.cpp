@@ -11,11 +11,13 @@ SnakeGame::SnakeGame() {
 
 // method holding main game loop
 void SnakeGame::Run() {
-    while( m_run &&  m_clock.updateTime()) {
+    while( m_run ) {
+        if ( m_clock.updateTime() ) {
 
-        Update();
+            Update();
 
-        m_clock.resetTimer();
+            m_clock.resetTimer();
+        }
     }
 }
 

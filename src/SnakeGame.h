@@ -14,7 +14,7 @@ public:
 private:
     void Update();
 
-    bool m_run;
+    bool m_run = true;
     Clock m_clock;
 
     Window m_window;

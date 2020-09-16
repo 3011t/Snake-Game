@@ -13,6 +13,6 @@
 #include <SFML/Window.hpp>
 
 struct Point {
-    int8_t x = 0;
-    int8_t y = 0;
+    int x = 0;
+    int y = 0;
 };

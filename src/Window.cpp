@@ -1,7 +1,7 @@
 #include "Window.h"
 
 Window::Window() {
-    m_window = new sf::RenderWindow(sf::VideoMode(320, 320), "SnakeGame");
+    m_window = new sf::RenderWindow(sf::VideoMode(320, 320), "Snake Game");
 }
 
 Window::~Window() {
@@ -19,7 +19,7 @@ void Window::drawPlayArea(const PlayArea& area) const {
             if ( tempState != PointState::Empty ) {
                 if ( tempState == PointState::Snake ) square.setFillColor(sf::Color::Green);
                 else if ( tempState == PointState::SnakeHead ) square.setFillColor(sf::Color::Cyan);
-                else if ( tempState == PointState::Apple ) square.setFillColor(sf::Color::Green);
+                else if ( tempState == PointState::Apple ) square.setFillColor(sf::Color::Red);
 
                 square.setPosition(sf::Vector2f(10 * i, 10 * j));
 

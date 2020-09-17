@@ -5,6 +5,8 @@ Window::Window() {
 }
 
 Window::~Window() {
+    m_window->close();
+
     delete m_window;
 }
 
@@ -29,10 +31,6 @@ void Window::drawPlayArea(const PlayArea& area) const {
     }
 
     m_window->display();
-}
-
-void Window::close() {
-    m_window->close();
 }
 
 std::vector<Event> Window::getEvents() {

@@ -27,7 +27,6 @@ void SnakeGame::Update() {
 
     for ( Event event : events) if ( event.type() == EventType::Terminate ) {
         m_run = false;
-        m_window.close();
     }
 
     m_window.drawPlayArea(m_playArea);

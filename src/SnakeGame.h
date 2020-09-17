@@ -13,6 +13,7 @@ public:
     void Run();
 private:
     void Update();
+    void handleEvents();
 
     bool m_run = true;
     Clock m_clock;

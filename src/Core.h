@@ -13,6 +13,10 @@
 #include <SFML/Window.hpp>
 
 struct Point {
-    int x = 0;
-    int y = 0;
+    int32_t x = 0;
+    int32_t y = 0;
+};
+
+enum class Direction {
+    NoDir, Up, Down, Left, Right
 };

@@ -13,9 +13,7 @@ SnakeGame::SnakeGame() {
 void SnakeGame::Run() {
     while( m_run ) {
         if ( m_clock.updateTime() ) {
-
             Update();
-
             m_clock.resetTimer();
         }
     }
@@ -24,7 +22,6 @@ void SnakeGame::Run() {
 void SnakeGame::Update() {
     //this will be moved to some kind of processEvents function
     std::vector<Event> events = m_window.getEvents();
-
     for ( Event event : events) if ( event.type() == EventType::Terminate ) {
         m_run = false;
     }

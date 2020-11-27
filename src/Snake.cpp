@@ -16,7 +16,7 @@ Snake::Snake() {
 
 void Snake::Update() {
     if (m_nextDirection != Direction::NoDir) {
-        moveSnake();
+        moveSnake(m_nextDirection);
     }
 
 
@@ -38,7 +38,7 @@ void Snake::increaseLength(int32_t amount) {
     m_length += amount;
 }
 
-void Snake::moveSnake() {
+void Snake::moveSnake(Direction direction) {
 
     //m_snake.pushFront(reverseDirection(m_nextDirection));
 

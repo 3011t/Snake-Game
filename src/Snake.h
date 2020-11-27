@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "LinkedList.h"
 #include "PlayArea.h"
+#include "Direction.h"
 
 class Snake {
 public:
@@ -14,10 +15,13 @@ public:
 
     void setNextDirection(Direction newDir);
 
+    // This is just plain stupid
     PlayArea createPlayArea();
 private:
     void increaseLength(int32_t amount);
-    void moveSnake();
+
+    // Update snake positions
+    void moveSnake(Direction direction);
 
 
     Point m_headPosition;
@@ -25,5 +29,5 @@ private:
 
     Direction m_nextDirection;
 
-    //LinkedList<Direction> m_snake;
+    //LinkedList<Direction> m_snakePieces;
 };

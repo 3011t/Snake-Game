@@ -29,5 +29,6 @@ private:
 
     Direction m_nextDirection;
 
+    // TODO: Figure out, how to save the snake intelligently
     //LinkedList<Direction> m_snakePieces;
 };

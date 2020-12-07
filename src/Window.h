@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "PlayArea.h"
 #include "Event.h"
+#include "KeyEvent.h"
 
 class Window {
 public:

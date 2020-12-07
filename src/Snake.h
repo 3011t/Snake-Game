@@ -5,6 +5,8 @@
 #include "PlayArea.h"
 #include "Direction.h"
 
+// TODO: Implement collisions
+
 class Snake {
 public:
     Snake();

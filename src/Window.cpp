@@ -42,5 +42,9 @@ std::vector<Event> Window::getEvents() {
         if (event.type == sf::Event::Closed) events.push_back(Event(EventType::Terminate));
     }
 
+    for (int i = 0; i + sf::Keyboard::A < sf::Keyboard::Z; ++i) {
+        // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key(sf::Keyboard::A + i))) events.push_back((Event)KeyEvent(EventType::KeyPressed, (Key)(Key::A + i)));
+    }
+
     return events;
 }
